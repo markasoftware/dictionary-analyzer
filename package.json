@@ -1,0 +1,16 @@
+{
+  "name": "dictionary-analyzer",
+  "version": "0.0.0",
+  "description": "boop",
+  "main": "analyze.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/markasoftware/dictionary-analyzer.git"
+  },
+  "author": "markasoftware",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/markasoftware/dictionary-analyzer/issues"
+  },
+  "homepage": "https://github.com/markasoftware/dictionary-analyzer#readme"
+}
