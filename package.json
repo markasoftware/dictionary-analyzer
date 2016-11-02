@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/markasoftware/dictionary-analyzer/issues"
   },
-  "homepage": "https://github.com/markasoftware/dictionary-analyzer#readme"
+  "homepage": "https://github.com/markasoftware/dictionary-analyzer#readme",
+  "dependencies": {
+    "strongly-connected-components": "^1.0.1"
+  }
 }
