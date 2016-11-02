@@ -36,15 +36,11 @@ allWords.forEach(curWord => {
     }
     const baseWordID = wordsToNums.get(curWord);
     const allDefIDs = allDefWords.map(c => wordsToNums.get(c)).filter(c => typeof c !== 'undefined');
-    allDefIDs.forEach(c => {
-        graphArr.push([baseWordID, c]);
-    });
+    graphArr[baseWordID] = allDefIDs;
 });
 
 console.log('initialization complete, starting scc');
-console.log(graphArr);
 const loops = scc(graphArr).components.filter(c => c.length > 1);
-console.log(loops);
 // let's reverse the map! yay!
 const numsToWords = new Map();
 allWords.forEach(c => {
@@ -54,7 +50,6 @@ const loopedWords = [];
 loops.forEach(innerLoops => {
     innerLoops.forEach(c => {
         const thisWord = numsToWords.get(c);
-        console.log(c, thisWord);
         if(loopedWords.indexOf(thisWord) === -1) {
             loopedWords.push(thisWord);
         }
